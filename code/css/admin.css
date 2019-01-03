@@ -1,0 +1,178 @@
+@font-face {
+	font-family: "sinkin_sans_light_300";
+	src: url("../assets/fonts/sinkin_sans_light_300.woff");
+}
+
+@font-face {
+	font-family: "sinkin_sans_bold_900_italic";
+	src: url("../assets/fonts/sinkin_sans_bold_900_italic.woff");
+}
+
+/*------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sinkin_sans_light_300;
+	transition: all ease-in-out 100ms;
+}
+
+/*------------------------------------------------------*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background: rgba(24, 25, 25, 1);
+}
+
+main {
+	padding: 20vh 5vw;
+	z-index: 1;
+}
+
+header {
+	background-color: rgba(24, 25, 25, 1);
+}
+
+/*------------------------------------------------------*/
+
+#actions {
+	background: white;
+	width: 100%;
+	text-align: center;
+}
+
+#actions .cell {
+	padding: 0 0 10vh 0;
+	border-bottom: solid rgba(24, 25, 25, .7) 1px;
+	border-top: solid rgba(24, 25, 25, .7) 1px;
+}
+
+#actions .cell:nth-child(odd) {
+	border-right: solid rgba(24, 25, 25, .7) 1px;
+	border-left: solid rgba(24, 25, 25, .7) 1px;
+}
+
+#actions .cell:nth-child(even) {
+	border-right: solid rgba(24, 25, 25, .7) 1px;
+}
+
+#actions .cell form {
+	
+}
+
+#actions .cell form h1 {
+	font-size: 2rem;
+	letter-spacing: .2rem;
+	border-bottom: none;
+	padding: 4vh 0;
+	margin-bottom: 4vh;
+	background-color: rgba(24, 25, 25, 1);
+	color: white;
+}
+
+#actions .cell form label {
+	font-size: 1.3rem;
+	padding: 2vh 0;
+	text-align: center;
+	letter-spacing: .2rem;
+}
+
+#actions .cell form input, #actions .cell form textarea {
+	border: solid rgba(24, 25, 25, .5) 1px;
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 4vh 1vw;
+	width: 90%;
+	margin: 2vh auto;
+}
+
+#actions .cell form input::placeholder, #actions .cell form textarea::placeholder {
+	color: rgba(24, 25, 25, 1);
+}
+
+#actions .cell form input::-ms-input-placeholder, #actions .cell form textarea::-ms-input-placeholder {
+	color: rgba(24, 25, 25, 1);
+}
+
+#actions .cell form input.file_input {
+	border: none;
+	padding: 0;
+}
+
+#actions .cell form .submit_btn {
+	border: none;
+	background-color: rgba(75, 66, 244, 1);
+	box-shadow: 4px 4px rgba(75, 66, 244, .5);
+	color: white;
+	margin-top: 4vh;
+	padding: 2vh 2vw;
+	letter-spacing: .1rem;
+	width: auto;
+}
+#actions .cell form .submit_btn:hover {
+	padding: 2vh 2.5vw;
+	cursor: pointer;
+}
+
+#actions .cell form .submit_btn.del {
+	background-color: rgba(229, 57, 63, 1);
+	box-shadow: 4px 4px rgba(229, 57, 63, .5);
+}
+
+#actions .cell .form_message .success p, #actions .cell .form_message .fail p {
+	color: white;
+	background-color: green;
+	padding: 2vh 2vw;
+	display: inline-block;
+	margin-top: 4vh;
+	font-size: 1.3rem;
+	letter-spacing: .2rem;
+}
+
+#actions .cell .form_message .fail p {
+	background-color: red;
+}
+
+/*------------------------------------------------------*/
+
+#orders {
+	/*border: dashed red 1px;*/
+	text-align: center;
+	padding: 10vh 0 10vh 0;
+	background-color: white;
+}
+
+#orders h1 {
+	background-color: white;
+	padding: 0 0 5vh 0;
+	font-size: 2rem;
+	letter-spacing: .2rem
+}
+
+#orders .head {
+	background-color: rgba(24, 25, 25, 1);
+	color: white;
+	font-size: 1.2rem;
+	letter-spacing: .2rem;
+	/*border-right: solid rgba(24, 25, 25, .5) 1px;
+	border-left: solid rgba(24, 25, 25, .5) 1px;*/
+}
+
+/*#orders .head .cell:nth-child(first) {
+	border-left: solid rgba(24, 25, 25, .5) 1px;
+}*/
+
+#orders .grid-x .cell {
+	padding: 4vh 0;
+	border-bottom: solid rgba(24, 25, 25, 1) 1px;
+}
+
+#orders .grid-x .cell p {
+	font-size: 1.2rem;
+	line-height: 3rem;
+	letter-spacing: .1rem;
+}

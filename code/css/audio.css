@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "sinkin_sans_light_300";
+	src: url("../assets/fonts/sinkin_sans_light_300.woff");
+}
+
+@font-face {
+	font-family: "sinkin_sans_bold_900_italic";
+	src: url("../assets/fonts/sinkin_sans_bold_900_italic.woff");
+}
+
+/*------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sinkin_sans_light_300;
+	transition: all ease-in-out 100ms;
+}
+
+/*------------------------------------------------------*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background: rgba(24, 25, 25, 1);
+}
+
+main {
+	padding: 20vh 5vw;
+	z-index: 1;
+}
+
+/*------------------------------------------------------*/
+
+#gallery {
+	background: white;
+	width: 100%;
+	padding: 2% 5% 5% 5%;
+}
+
+#gallery .cell {
+	padding: 5%;
+	text-align: center;
+	border-bottom: solid rgba(24, 25, 25, .5) 1px;
+}
+
+#gallery .cell .poster {
+	max-width: 100%;
+	max-height: 50vh;
+}
+
+#gallery .cell h1 {
+	font-size: 1.6rem;
+	padding: 3vh 0;
+	text-align: center;
+	letter-spacing: .2rem;
+	background: rgba(24, 25, 25, 1);
+	color: white;
+	border-top: solid rgba(255, 255, 255, .3) 1px;
+	line-height: 4rem;
+}
+
+#gallery .cell p {
+	padding: 5% 0;
+}
+
+#gallery .cell audio {
+	width: 100%;
+	border-radius: 50px;
+	background: rgba(24, 25, 25, 1);
+}
+
+/*MOBILE DEVICES*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	#gallery {
+		padding: 4% 0 5% 0;
+	}
+	#gallery .cell {
+		padding: 20% 5%;
+		border-bottom: solid rgba(24, 25, 25, .5) 1px;
+		text-align: center;
+	}
+	#gallery .cell h1 {
+		line-height: 3rem;
+		background: rgba(24, 25, 25, 1);
+		color: white;
+	}
+}

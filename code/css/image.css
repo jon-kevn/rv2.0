@@ -1,0 +1,112 @@
+@font-face {
+	font-family: "sinkin_sans_light_300";
+	src: url("../assets/fonts/sinkin_sans_light_300.woff");
+}
+
+@font-face {
+	font-family: "sinkin_sans_bold_900_italic";
+	src: url("../assets/fonts/sinkin_sans_bold_900_italic.woff");
+}
+
+/*------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sinkin_sans_light_300;
+	transition: all ease-in-out 100ms;
+}
+
+/*------------------------------------------------------*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background: rgba(24, 25, 25, 1);
+}
+
+main {
+	padding: 20vh 5vw;
+	z-index: 1;
+}
+
+/*------------------------------------------------------*/
+
+#gallery {
+	background: white;
+	width: 100%;
+	padding: 3%;
+	text-align: center;
+}
+
+#gallery img {
+	max-height: 50vh;
+	max-width: 30vw;
+	margin: 1%;
+}
+#gallery img:hover {
+	cursor: url('../assets/icons/expand.png'), pointer;
+}
+
+/*MOBILE DEVICES*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	#gallery {
+		padding: 2%;
+	}
+	#gallery img {
+		max-height: 60vh;
+		max-width: 40vw;
+	}
+}
+
+/*TABLET DEVICES*/
+@media only screen and (min-width: 481px) and (max-width: 1280px){
+	#gallery {
+		padding: 2%;
+	}
+	#gallery img {
+		max-height: 60vh;
+		max-width: 40vw;
+	}
+}
+
+/*------------------------------------------------------*/
+
+#light_box {
+	background: rgba(24, 25, 25, .99);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 5vh 10vw;
+	text-align: center;
+	display: none;
+	z-index: 9999;
+}
+#light_box:hover {
+	cursor: url('../assets/icons/collapse.png'), pointer;
+}
+
+#light_box img {
+	max-height: 90vh;
+	max-width: 90vw;
+	display: inline-block;
+}
+
+/*MOBILE DEVICES*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	#light_box {
+		padding: 5vh 5vw;
+	}
+}
+
+/*TABLET DEVICES*/
+@media only screen and (min-width: 481px) and (max-width: 1280px){
+	#light_box {
+		padding: 5vh 5vw;
+	}
+}

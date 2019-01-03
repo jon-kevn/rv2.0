@@ -1,0 +1,56 @@
+footer {
+	background: rgba(24, 25, 25, 1);
+	width: 100%;
+	padding: 5vh 0 0 0;
+}
+
+footer .cell {
+	padding: 5vh 6vw;
+}
+
+footer .foot_links a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 2vh 1vw;
+	letter-spacing: .2rem;
+}
+footer .foot_links a:hover {
+	letter-spacing: .4rem;
+}
+
+footer .foot_smis a {
+	display: block;
+	padding: 2vh 3vw;
+	text-align: right;
+}
+
+footer .foot_smis a img {
+	height: 35px;
+	width: 35px;
+	padding: 4%;
+	background-color: rgba(24, 25, 25, 1);
+	box-shadow: 4px 4px rgba(24, 25, 25, .5);
+}
+footer .foot_smis a img:hover {
+	background-color: rgba(75, 66, 244, 1);
+	box-shadow: 4px 4px rgba(75, 66, 244, .5);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	footer .cell {
+		text-align: center;
+	}
+	footer .cell a {
+		text-align: center;
+	}
+	footer .foot_smis a {
+		display: inline-block;
+	}
+	footer .foot_smis a img {
+		height: 35px;
+		width: 35px;
+		padding: 10%;
+	}
+}

@@ -1,0 +1,78 @@
+header {
+	width: 100%;
+	height: 17vh;
+	position: fixed;
+	background-color: rgba(24, 25, 25, 0);
+	z-index: 7777;
+}
+header:hover {
+	background-color: rgba(24, 25, 25, 1);
+}
+
+header .cell {
+	display: inline-block;
+	padding: 5vh 5vw;
+	max-height: 100%;
+}
+
+header #logo_box a {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+header #logo_box a .logo {
+	height: 40px;
+	width: 40px;
+}
+header #logo_box a .logo:hover {
+	height: 44px;
+	width: 44px;
+}
+
+header #menu_box {
+	text-align: right;
+}
+
+header #menu_box p {
+	display: inline-block;
+	color: white;
+	font-size: 1.5rem;
+	letter-spacing: .2rem;
+	background: rgba(24, 25, 25, 1);
+	padding: 1.5% 2.5%;
+	box-shadow: 4px 4px rgba(24, 25, 25, .5);
+}
+header #menu_box p:hover {
+	background: white;
+	box-shadow: 4px 4px rgba(255, 255, 255, .5);
+	color: black;
+	cursor: pointer;
+	padding: 1.5% 3%;
+}
+
+/*MOBILE DEVICES*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	header {
+		/*background-color: rgba(24, 25, 25, 1);*/
+	}
+	header #logo_box a .logo {
+		height: 30px;
+		width: 30px;
+	}
+	header #logo_box a .logo:hover {
+		height: 34px;
+		width: 34px;
+	}
+	header #menu_box p {
+		font-size: 1.2rem;
+	}
+
+}
+
+/*TABLET DEVICES*/
+@media only screen and (min-width: 481px) and (max-width: 1280px){
+	header {
+		background-color: rgba(24, 25, 25, 1);
+	}
+}

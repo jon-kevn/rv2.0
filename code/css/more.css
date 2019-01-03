@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "sinkin_sans_light_300";
+	src: url("../assets/fonts/sinkin_sans_light_300.woff");
+}
+
+@font-face {
+	font-family: "sinkin_sans_bold_900_italic";
+	src: url("../assets/fonts/sinkin_sans_bold_900_italic.woff");
+}
+
+/*------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sinkin_sans_light_300;
+	transition: all ease-in-out 100ms;
+}
+
+/*------------------------------------------------------*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background: rgba(24, 25, 25, 1);
+}
+
+main {
+	z-index: 1;
+}
+
+hr {
+	height: 1px;
+	color: black;
+	background-color: black;
+	border-color: black;
+	margin: 4vh 0;
+}
+
+/*------------------------------------------------------*/
+
+.container {
+	width: 100%;
+	padding: 20vh 9vw;
+}
+
+.container .cell {
+	padding: 1vw 1vw 4vw 1vw;
+}
+
+.container .cont {
+	background: white;
+	padding: 5vh 2.5vw;
+}
+
+.container .title {
+	font-family: sinkin_sans_bold_900_italic;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+
+.container .subtitle {
+	font-size: 1.25rem;
+	line-height: 3rem;
+	margin: 0 0 6vh 0;
+}
+
+.container .read_more {
+	color: white;
+	background: rgba(75, 66, 244, 1);
+	box-shadow: 4px 4px rgba(75, 66, 244, .5);
+	font-size: 1.2rem;
+	padding: 2vh 2vw;
+	letter-spacing: .2rem;
+	display: inline-block;
+}
+.container .read_more:hover {
+	padding: 2vh 3vw;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	.container {
+		padding: 0 0;
+	}
+	.container .cell {
+		padding: 0 0;
+		text-align: center;
+		background-color: white;
+		padding: 0 0 10vh 0;
+	}
+	.container .cont {
+		padding: 5vh 10vw;
+	}
+	.container .title {
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+	.container .subtitle {
+		font-size: 1.4rem;
+		line-height: 3.5rem;
+		margin: 0 0 4vh 0;
+	}
+}
